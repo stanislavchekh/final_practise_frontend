@@ -4,16 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>"Джерело"</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss"></style>
+    <link rel="stylesheet" href="src/output.css" />
   </head>
-  <body class="container">
+  <body class="container mx-auto">
     <header>
       <div class="flex justify-between items-center border-b p-3">
         <div class="top flex gap-2">
@@ -35,7 +28,7 @@
             <a youtube href="#"><img src="img/youtube.svg" alt="youtube" /></a>
           </ul>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 text-l">
           <a class="flex items-center gap-2" phone href="#"
             ><img src="img/phone.svg" alt="phone" />+34 641 35 22 51</a
           >
@@ -50,13 +43,13 @@
           </select>
         </div>
       </div>
-      <nav class="flex items-center justify-center m-2">
+      <nav class="flex items-center justify-center m-0 mt-2 gap-5 text-2xl">
         <select name="directions" aria-placeholder="Наші напрямки" id="#">
           <option value="#">Наші напрямки</option>
           <option value="#"></option>
           <option value="#"></option>
         </select>
-        <ul class="flex items-center gap-2 m-0">
+        <ul class="flex items-center gap-5 m-0 pr-5">
           <li><a href="#">Наші партнери</a></li>
           <li><a href="#">Звіти</a></li>
           <li><a href="#">Новини</a></li>
@@ -64,17 +57,30 @@
         </ul>
       </nav>
     </header>
-    <section hero class="flex flex-col items-center text-center m-[110px]">
-      <h1 title>
+    <section
+      hero
+      class="flex flex-col items-center text-center m-[110px] gap-8"
+    >
+      <h1 title class="text-6xl flex flex-col gap-5">
         Українська Асоціація «Джерело»
-        <span class="d-block"
-          >Розвиток та підтримка української діаспори в Каталонії, Іспанії з
-          2012 року
+        <span class="block text-xl font-light"
+          >Розвиток та підтримка української діаспори в Каталонії, <br />
+          Іспанії з 2012 року
         </span>
       </h1>
-      <div buttons>
-        <button type="button">Зв'язатись</button>
-        <button type="button">Підтримати</button>
+      <div buttons class="flex gap-5">
+        <button
+          type="button"
+          class="text-2xl py-3 px-18 bg-blue-500 text-white rounded-4xl"
+        >
+          Зв'язатись
+        </button>
+        <button
+          type="button"
+          class="text-2xl py-3 px-18 bg-yellow-300 rounded-4xl"
+        >
+          Підтримати
+        </button>
       </div>
     </section>
     <div slider></div>
@@ -444,10 +450,5 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
